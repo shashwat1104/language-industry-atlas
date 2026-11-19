@@ -1,115 +1,330 @@
 {
   "schema_version": "1.0.0",
   "database": "Companies (Part 20 & Part 29.2)",
-  "fields": ["id", "name", "country", "category", "services", "languages", "industries", "technology", "size", "revenue_usd", "revenue_year", "revenue_source", "ownership", "competitors", "strengths", "weaknesses"],
+  "fields": [
+    "id",
+    "name",
+    "country",
+    "category",
+    "services",
+    "languages",
+    "industries",
+    "technology",
+    "size",
+    "revenue_usd",
+    "revenue_year",
+    "revenue_source",
+    "ownership",
+    "competitors",
+    "strengths",
+    "weaknesses"
+  ],
   "records": [
     {
       "id": "comp-transperfect",
       "name": "TransPerfect",
       "country": "USA",
       "category": "Global LSP / Mega-LSP",
-      "services": ["Translation", "Enterprise localization", "Clinical linguistic validation", "Legal e-discovery & litigation", "Media localization", "AI data (DataForce)"],
+      "services": [
+        "Translation",
+        "Enterprise localization",
+        "Clinical linguistic validation",
+        "Legal e-discovery & litigation",
+        "Media localization",
+        "AI data (DataForce)"
+      ],
       "languages": "170+",
-      "industries": ["Life Sciences", "Legal", "Retail & E-commerce", "Travel & Hospitality", "Finance", "Media"],
-      "technology": ["GlobalLink TMS", "GlobalLink Now", "DataForce platform"],
+      "industries": [
+        "Life Sciences",
+        "Legal",
+        "Retail & E-commerce",
+        "Travel & Hospitality",
+        "Finance",
+        "Media"
+      ],
+      "technology": [
+        "GlobalLink TMS",
+        "GlobalLink Now",
+        "DataForce platform"
+      ],
       "size": "10,000+ employees",
       "revenue_usd": "$1.23B+ (verified 2024/2025 company announcements & Nimdzi/Slator reports)",
       "revenue_year": 2024,
       "revenue_source": "Nimdzi 100 / Slator LSPI / Company releases",
       "ownership": "Privately held (Phil Shawe)",
-      "competitors": ["RWS", "Lionbridge", "LanguageLine Solutions", "Keywords Studios", "Welocalize"],
-      "strengths": ["Largest revenue among traditional full-service LSPs", "Sticky GlobalLink technology bundle", "Dominant legal and life sciences practices"],
-      "weaknesses": ["High exposure to traditional enterprise document & web translation volumes undergoing AI pricing compression"]
+      "competitors": [
+        "RWS",
+        "Lionbridge",
+        "LanguageLine Solutions",
+        "Keywords Studios",
+        "Welocalize"
+      ],
+      "strengths": [
+        "Largest revenue among traditional full-service LSPs",
+        "Sticky GlobalLink technology bundle",
+        "Dominant legal and life sciences practices"
+      ],
+      "weaknesses": [
+        "High exposure to traditional enterprise document & web translation volumes undergoing AI pricing compression"
+      ]
     },
     {
       "id": "comp-languageline",
       "name": "LanguageLine Solutions (Teleperformance)",
       "country": "USA / France",
       "category": "Interpretation Provider / Mega-LSP",
-      "services": ["Over-the-Phone Interpreting (OPI)", "Video Remote Interpreting (VRI)", "On-site interpreting", "Document translation", "Interpreter assessment"],
+      "services": [
+        "Over-the-Phone Interpreting (OPI)",
+        "Video Remote Interpreting (VRI)",
+        "On-site interpreting",
+        "Document translation",
+        "Interpreter assessment"
+      ],
       "languages": "240+",
-      "industries": ["Healthcare (US hospitals)", "Government & Emergency Services", "Banking & Insurance", "Courts"],
-      "technology": ["LanguageLine InSight VRI/OPI platform", "Interpreter routing engine"],
+      "industries": [
+        "Healthcare (US hospitals)",
+        "Government & Emergency Services",
+        "Banking & Insurance",
+        "Courts"
+      ],
+      "technology": [
+        "LanguageLine InSight VRI/OPI platform",
+        "Interpreter routing engine"
+      ],
       "size": "15,000+ interpreters",
       "revenue_usd": "~$1.3B+ (Teleperformance Specialized Services segment disclosures)",
       "revenue_year": 2024,
       "revenue_source": "Teleperformance Annual Report / Nimdzi 100",
       "ownership": "Subsidiary of Teleperformance SE (Euronext Paris: TEP)",
-      "competitors": ["CyraCom", "AMN Healthcare Language Services", "Propio Language Services", "Martti/Cloudbreak"],
-      "strengths": ["High operating margins (~30%+ EBITDA)", "Deep regulatory compliance moat in US healthcare (Title VI / ACA Section 1557)"],
-      "weaknesses": ["Long-term threat from low-latency speech-to-speech AI in non-regulated triage calls"]
+      "competitors": [
+        "CyraCom",
+        "AMN Healthcare Language Services",
+        "Propio Language Services",
+        "Martti/Cloudbreak"
+      ],
+      "strengths": [
+        "High operating margins (~30%+ EBITDA)",
+        "Deep regulatory compliance moat in US healthcare (Title VI / ACA Section 1557)"
+      ],
+      "weaknesses": [
+        "Long-term threat from low-latency speech-to-speech AI in non-regulated triage calls"
+      ]
     },
     {
       "id": "comp-rws",
       "name": "RWS Holdings plc",
       "country": "United Kingdom",
       "category": "Global LSP & Translation Technology Vendor",
-      "services": ["Enterprise localization", "Regulated life sciences & financial translation", "Patent/IP translation", "CAT/TMS software", "Neural MT", "TrainAI data services"],
+      "services": [
+        "Enterprise localization",
+        "Regulated life sciences & financial translation",
+        "Patent/IP translation",
+        "CAT/TMS software",
+        "Neural MT",
+        "TrainAI data services"
+      ],
       "languages": "150+",
-      "industries": ["Technology", "Life Sciences", "Intellectual Property / Patents", "Financial Services", "Automotive"],
-      "technology": ["Trados Studio", "Trados Enterprise", "Language Weaver (NMT)", "Evolve (LLM+MT)", "Tridion Docs"],
+      "industries": [
+        "Technology",
+        "Life Sciences",
+        "Intellectual Property / Patents",
+        "Financial Services",
+        "Automotive"
+      ],
+      "technology": [
+        "Trados Studio",
+        "Trados Enterprise",
+        "Language Weaver (NMT)",
+        "Evolve (LLM+MT)",
+        "Tridion Docs"
+      ],
       "size": "7,500+ employees",
       "revenue_usd": "£718.2M (~$910M USD, FY2024 audited report)",
       "revenue_year": 2024,
       "revenue_source": "RWS Holdings plc FY24 Annual Report (LSE: RWS)",
       "ownership": "Publicly listed (London Stock Exchange: RWS)",
-      "competitors": ["TransPerfect", "Lionbridge", "Questel", "Phrase", "Smartling"],
-      "strengths": ["Owns industry-standard desktop CAT tool (Trados) + proprietary NMT (Language Weaver) + IP/Life Sciences division"],
-      "weaknesses": ["Post-SDL acquisition integration complexity and public-market valuation pressure from generative AI disruption narratives"]
+      "competitors": [
+        "TransPerfect",
+        "Lionbridge",
+        "Questel",
+        "Phrase",
+        "Smartling"
+      ],
+      "strengths": [
+        "Owns industry-standard desktop CAT tool (Trados) + proprietary NMT (Language Weaver) + IP/Life Sciences division"
+      ],
+      "weaknesses": [
+        "Post-SDL acquisition integration complexity and public-market valuation pressure from generative AI disruption narratives"
+      ]
     },
     {
       "id": "comp-keywords",
       "name": "Keywords Studios",
       "country": "Ireland / UK",
       "category": "Gaming & Media Localization Company",
-      "services": ["Video game localization", "Game audio & voice recording", "Functional & Localization QA (LQA)", "Art & co-development", "Player support"],
+      "services": [
+        "Video game localization",
+        "Game audio & voice recording",
+        "Functional & Localization QA (LQA)",
+        "Art & co-development",
+        "Player support"
+      ],
       "languages": "50+",
-      "industries": ["AAA Video Games", "Mobile Gaming", "Console & PC Publishing", "Film & Streaming (via Blindlight/kantana)"],
-      "technology": ["KantantanMT / Xloc", "Helpshift", "Internal AI LQA & dialogue tools"],
+      "industries": [
+        "AAA Video Games",
+        "Mobile Gaming",
+        "Console & PC Publishing",
+        "Film & Streaming (via Blindlight/kantana)"
+      ],
+      "technology": [
+        "KantantanMT / Xloc",
+        "Helpshift",
+        "Internal AI LQA & dialogue tools"
+      ],
       "size": "12,000+ employees across 70+ studios",
       "revenue_usd": "€780M+ total group (~$850M USD; Localization & LQA subset ~€150M–€200M)",
       "revenue_year": 2023,
       "revenue_source": "Keywords Studios Annual Report / EQT Acquisition Filings (2024)",
       "ownership": "Acquired by EQT Private Equity (2024, ~£2.2B valuation)",
-      "competitors": ["Lionbridge Games", "PTW (Pole To Win)", "Testronic", "QLOC", "Alconost"],
-      "strengths": ["Unmatched global footprint in AAA game studios, secure LQA labs, and voice recording booths"],
-      "weaknesses": ["Cyclical dependency on AAA game release schedules and voice actor union strikes (SAG-AFTRA AI protections)"]
+      "competitors": [
+        "Lionbridge Games",
+        "PTW (Pole To Win)",
+        "Testronic",
+        "QLOC",
+        "Alconost"
+      ],
+      "strengths": [
+        "Unmatched global footprint in AAA game studios, secure LQA labs, and voice recording booths"
+      ],
+      "weaknesses": [
+        "Cyclical dependency on AAA game release schedules and voice actor union strikes (SAG-AFTRA AI protections)"
+      ]
     },
     {
       "id": "comp-deepl",
       "name": "DeepL SE",
       "country": "Germany",
       "category": "AI Translation Provider",
-      "services": ["Neural Machine Translation & LLM translation API", "DeepL Pro enterprise subscription", "DeepL Write", "DeepL Voice (real-time speech translation)"],
+      "services": [
+        "Neural Machine Translation & LLM translation API",
+        "DeepL Pro enterprise subscription",
+        "DeepL Write",
+        "DeepL Voice (real-time speech translation)"
+      ],
       "languages": "33+",
-      "industries": ["Enterprise SaaS", "Legal & Finance", "Manufacturing", "LSP CAT/TMS integration"],
-      "technology": ["DeepL next-gen LLM/NMT models", "Glossary enforcement API", "DeepL Voice"],
+      "industries": [
+        "Enterprise SaaS",
+        "Legal & Finance",
+        "Manufacturing",
+        "LSP CAT/TMS integration"
+      ],
+      "technology": [
+        "DeepL next-gen LLM/NMT models",
+        "Glossary enforcement API",
+        "DeepL Voice"
+      ],
       "size": "1,000+ employees",
       "revenue_usd": "Estimated $180M–$250M+ ARR (Raised $300M at $2B valuation in May 2024)",
       "revenue_year": 2024,
       "revenue_source": "Slator / DeepL funding announcements (Index Ventures round, May 2024)",
       "ownership": "VC-backed private (Index Ventures, IVP, Atomico, Bessemer)",
-      "competitors": ["Google Cloud Translation", "OpenAI GPT-4o", "Anthropic Claude 3.5", "Amazon Translate", "ModernMT"],
-      "strengths": ["Strong brand perception for European language fluency, GDPR compliance, and seamless CAT tool glossary integration"],
-      "weaknesses": ["Narrower language coverage than Google/LLMs and increasing competition from frontier LLMs with larger context windows"]
+      "competitors": [
+        "Google Cloud Translation",
+        "OpenAI GPT-4o",
+        "Anthropic Claude 3.5",
+        "Amazon Translate",
+        "ModernMT"
+      ],
+      "strengths": [
+        "Strong brand perception for European language fluency, GDPR compliance, and seamless CAT tool glossary integration"
+      ],
+      "weaknesses": [
+        "Narrower language coverage than Google/LLMs and increasing competition from frontier LLMs with larger context windows"
+      ]
     },
     {
       "id": "comp-smartling",
       "name": "Smartling",
       "country": "USA",
       "category": "TMS Vendor & AI Translation Platform",
-      "services": ["Cloud Translation Management System (TMS)", "Global Delivery Network (GDN) web proxy", "AI Hub (LLM/MT routing)", "Managed language services"],
+      "services": [
+        "Cloud Translation Management System (TMS)",
+        "Global Delivery Network (GDN) web proxy",
+        "AI Hub (LLM/MT routing)",
+        "Managed language services"
+      ],
       "languages": "150+",
-      "industries": ["Tech & SaaS", "E-commerce", "Travel & Fintech", "Consumer Brands"],
-      "technology": ["Smartling TMS", "Visual Context capture", "AI Hub multi-engine router"],
+      "industries": [
+        "Tech & SaaS",
+        "E-commerce",
+        "Travel & Fintech",
+        "Consumer Brands"
+      ],
+      "technology": [
+        "Smartling TMS",
+        "Visual Context capture",
+        "AI Hub multi-engine router"
+      ],
       "size": "250+ employees",
       "revenue_usd": "Estimated $60M–$90M+ (Private PE-backed)",
       "revenue_year": 2024,
       "revenue_source": "Industry estimates (Nimdzi / Slator)",
       "ownership": "Backed by Battery Ventures",
-      "competitors": ["Phrase", "Lokalise", "Crowdin", "XTM International", "Transifex"],
-      "strengths": ["Best-in-class visual context for translators and automated MT/LLM routing"],
-      "weaknesses": ["Premium enterprise pricing makes it overkill for small indie developers or solo translators"]
+      "competitors": [
+        "Phrase",
+        "Lokalise",
+        "Crowdin",
+        "XTM International",
+        "Transifex"
+      ],
+      "strengths": [
+        "Best-in-class visual context for translators and automated MT/LLM routing"
+      ],
+      "weaknesses": [
+        "Premium enterprise pricing makes it overkill for small indie developers or solo translators"
+      ]
+    },
+    {
+      "id": "comp-modelfront",
+      "name": "ModelFront (creator of OpenLoc)",
+      "country": "USA",
+      "category": "AI Translation Verification (QE/APE) & Open AI-Native TMS",
+      "services": [
+        "Quality prediction (QE)",
+        "Automatic post-editing (APE)",
+        "Applied verification API",
+        "OpenLoc open-source AI-native TMS (free, hosting at cost)"
+      ],
+      "languages": "100+",
+      "industries": [
+        "Software & Hardware",
+        "Intellectual Property / Patents (Questel)",
+        "Luxury E-Commerce (FARFETCH)",
+        "Travel Platforms",
+        "Industrial Automation",
+        "Life Sciences / CROs"
+      ],
+      "technology": [
+        "ModelFront Quality Prediction & APE API",
+        "OpenLoc (Open AI-native TMS with MCP, RAG prompt builder, zero AI tax)"
+      ],
+      "size": "High-leverage AI engineering team (>1.09 Billion enterprise words automated)",
+      "revenue_usd": "Private outcome-based enterprise ARR (Fortune 500 & category leaders)",
+      "revenue_year": 2026,
+      "revenue_source": "ModelFront & OpenLoc public announcements (Tech Week Oct 2026 / Slator)",
+      "ownership": "Privately held (ModelFront Inc.)",
+      "competitors": [
+        "TAUS QE",
+        "Unbabel/Widn",
+        "Legacy closed TMS AI add-ons (Phrase/Smartling)"
+      ],
+      "strengths": [
+        "Category pioneer in verifying & fixing AI translations to skip manual human review on millions of words",
+        "Launched OpenLoc (free, open, zero-AI-tax TMS with system-wide MCP)"
+      ],
+      "weaknesses": [
+        "Focused specifically on high-volume enterprise & LSP verification rather than manual human translation staffing"
+      ]
     }
   ]
 }

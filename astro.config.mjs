@@ -54,6 +54,12 @@ export default defineConfig({
       ],
       sidebar: [
         {
+          label: 'Interactive Bookshelf & Workbench',
+          items: [
+            { label: '← Back to 20-Volume Bookshelf & Live QE/OpenLoc Tools', link: '/' },
+          ],
+        },
+        {
           label: '00 — Architecture & Roadmap',
           items: [
             { label: '01. Master Industry Atlas', slug: '00-architecture/01-master-atlas' },

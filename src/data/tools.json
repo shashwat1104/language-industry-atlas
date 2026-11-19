@@ -1,7 +1,19 @@
 {
   "schema_version": "1.0.0",
   "database": "Tools & Software Ecosystem (Part 8 & Part 29.3)",
-  "fields": ["id", "tool", "category", "vendor", "pricing", "users", "integrations", "file_support", "strengths", "limitations", "ai_capabilities"],
+  "fields": [
+    "id",
+    "tool",
+    "category",
+    "vendor",
+    "pricing",
+    "users",
+    "integrations",
+    "file_support",
+    "strengths",
+    "limitations",
+    "ai_capabilities"
+  ],
   "records": [
     {
       "id": "tool-trados-studio",
@@ -9,12 +21,45 @@
       "category": "CAT Tool (Desktop + Cloud Hybrid)",
       "vendor": "RWS",
       "pricing": "Perpetual/Subscription (~$600–$2,400+ for Freelance/Professional)",
-      "users": ["Freelance translators", "LSP project managers", "Enterprise language departments"],
-      "integrations": ["RWS AppStore (400+ plugins)", "DeepL", "Language Weaver", "OpenAI/LLM plugins", "MultiTerm"],
-      "file_support": ["SDLXLIFF", "XLIFF 1.2/2.0", "TMX", "TBX", "DOCX", "IDML", "JSON", "XML", "HTML", "PO", "RESX"],
-      "strengths": ["De facto industry standard file package (.sdlppx/.sdlxliff)", "Deep XML/file filter customization", "Powerful QA and terminology verification with MultiTerm"],
-      "limitations": ["Windows-only desktop client", "Steep learning curve and legacy UI complexity"],
-      "ai_capabilities": ["Trados Copilot / generative AI assistant", "Neural MT adaptive engines via Language Weaver", "Smart Help"]
+      "users": [
+        "Freelance translators",
+        "LSP project managers",
+        "Enterprise language departments"
+      ],
+      "integrations": [
+        "RWS AppStore (400+ plugins)",
+        "DeepL",
+        "Language Weaver",
+        "OpenAI/LLM plugins",
+        "MultiTerm"
+      ],
+      "file_support": [
+        "SDLXLIFF",
+        "XLIFF 1.2/2.0",
+        "TMX",
+        "TBX",
+        "DOCX",
+        "IDML",
+        "JSON",
+        "XML",
+        "HTML",
+        "PO",
+        "RESX"
+      ],
+      "strengths": [
+        "De facto industry standard file package (.sdlppx/.sdlxliff)",
+        "Deep XML/file filter customization",
+        "Powerful QA and terminology verification with MultiTerm"
+      ],
+      "limitations": [
+        "Windows-only desktop client",
+        "Steep learning curve and legacy UI complexity"
+      ],
+      "ai_capabilities": [
+        "Trados Copilot / generative AI assistant",
+        "Neural MT adaptive engines via Language Weaver",
+        "Smart Help"
+      ]
     },
     {
       "id": "tool-memoq",
@@ -22,12 +67,44 @@
       "category": "CAT Tool & Enterprise TMS",
       "vendor": "memoQ Translation Technologies",
       "pricing": "Freelance (~$620+) / Server & Cloud Enterprise custom tiers",
-      "users": ["Freelance linguists", "Mid-to-large LSPs", "Game & Life Sciences enterprises"],
-      "integrations": ["XTRF", "Plunet", "DeepL", "Google MT", "Amazon Translate", "Git/CMS connectors via Content Connector"],
-      "file_support": ["MQXLIFF", "XLIFF", "SDLXLIFF", "TMX", "TBX", "CSV", "XLSX", "IDML", "DOCX", "JSON", "RESX"],
-      "strengths": ["LiveDocs corpus alignment without formal TM creation", "Excellent interoperability with Trados packages", "Strong game and life sciences workflow features"],
-      "limitations": ["Desktop client is Windows-native (WebTrans browser editor has fewer power-user features)"],
-      "ai_capabilities": ["memoQ Adaptive Generative Translation (AGT)", "Automated QA & MTQE plugins"]
+      "users": [
+        "Freelance linguists",
+        "Mid-to-large LSPs",
+        "Game & Life Sciences enterprises"
+      ],
+      "integrations": [
+        "XTRF",
+        "Plunet",
+        "DeepL",
+        "Google MT",
+        "Amazon Translate",
+        "Git/CMS connectors via Content Connector"
+      ],
+      "file_support": [
+        "MQXLIFF",
+        "XLIFF",
+        "SDLXLIFF",
+        "TMX",
+        "TBX",
+        "CSV",
+        "XLSX",
+        "IDML",
+        "DOCX",
+        "JSON",
+        "RESX"
+      ],
+      "strengths": [
+        "LiveDocs corpus alignment without formal TM creation",
+        "Excellent interoperability with Trados packages",
+        "Strong game and life sciences workflow features"
+      ],
+      "limitations": [
+        "Desktop client is Windows-native (WebTrans browser editor has fewer power-user features)"
+      ],
+      "ai_capabilities": [
+        "memoQ Adaptive Generative Translation (AGT)",
+        "Automated QA & MTQE plugins"
+      ]
     },
     {
       "id": "tool-phrase",
@@ -35,12 +112,46 @@
       "category": "Cloud TMS & Software Localization Platform",
       "vendor": "Phrase (formerly Memsource + PhraseApp)",
       "pricing": "SaaS subscription tiers ($27/mofreelance to $1,000+/mo enterprise)",
-      "users": ["Enterprise localization teams", "Software developers", "LSPs"],
-      "integrations": ["GitHub", "GitLab", "Figma", "Contentful", "Zendesk", "WordPress", "Salesforce", "50+ connectors"],
-      "file_support": ["MXLIFF", "XLIFF", "JSON", "ARB", "STRINGS", "XML", "PO", "YAML", "DOCX", "IDML", "SRT"],
-      "strengths": ["Combines enterprise document TMS (Memsource) with developer-centric string management (Phrase Strings) and MT routing (Phrase NextMT)"],
-      "limitations": ["Dual UI heritage between TMS and Strings modules requires onboarding coordination"],
-      "ai_capabilities": ["Phrase NextMT", "Auto LQA", "MT Quality Estimation (MTQE) scoring 0–100% per segment", "Phrase Portal"]
+      "users": [
+        "Enterprise localization teams",
+        "Software developers",
+        "LSPs"
+      ],
+      "integrations": [
+        "GitHub",
+        "GitLab",
+        "Figma",
+        "Contentful",
+        "Zendesk",
+        "WordPress",
+        "Salesforce",
+        "50+ connectors"
+      ],
+      "file_support": [
+        "MXLIFF",
+        "XLIFF",
+        "JSON",
+        "ARB",
+        "STRINGS",
+        "XML",
+        "PO",
+        "YAML",
+        "DOCX",
+        "IDML",
+        "SRT"
+      ],
+      "strengths": [
+        "Combines enterprise document TMS (Memsource) with developer-centric string management (Phrase Strings) and MT routing (Phrase NextMT)"
+      ],
+      "limitations": [
+        "Dual UI heritage between TMS and Strings modules requires onboarding coordination"
+      ],
+      "ai_capabilities": [
+        "Phrase NextMT",
+        "Auto LQA",
+        "MT Quality Estimation (MTQE) scoring 0–100% per segment",
+        "Phrase Portal"
+      ]
     },
     {
       "id": "tool-lokalise",
@@ -48,12 +159,45 @@
       "category": "Developer & SaaS TMS",
       "vendor": "Lokalise",
       "pricing": "SaaS subscription ($120/mo Start to Enterprise custom)",
-      "users": ["Product managers", "UI/UX designers", "Software engineers", "SaaS localization teams"],
-      "integrations": ["Figma", "GitHub", "GitLab", "Bitbucket", "Intercom", "Contentful", "Webflow", "iOS/Android OTA SDKs"],
-      "file_support": ["JSON", "YAML", "XML", "STRINGS", "STRINGSDICT", "ARB", "PO", "PROPERTIES", "XLIFF", "CSV", "XLSX"],
-      "strengths": ["Design-stage localization via two-way Figma plugin", "Over-the-Air (OTA) mobile bundle updates without App Store review wait"],
-      "limitations": ["Less suited for heavy print DTP or complex clinical/legal document workflows than Trados/memoQ"],
-      "ai_capabilities": ["Lokalise AI (context & style-guide driven LLM translation, automatic LQA checks, variant generation)"]
+      "users": [
+        "Product managers",
+        "UI/UX designers",
+        "Software engineers",
+        "SaaS localization teams"
+      ],
+      "integrations": [
+        "Figma",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "Intercom",
+        "Contentful",
+        "Webflow",
+        "iOS/Android OTA SDKs"
+      ],
+      "file_support": [
+        "JSON",
+        "YAML",
+        "XML",
+        "STRINGS",
+        "STRINGSDICT",
+        "ARB",
+        "PO",
+        "PROPERTIES",
+        "XLIFF",
+        "CSV",
+        "XLSX"
+      ],
+      "strengths": [
+        "Design-stage localization via two-way Figma plugin",
+        "Over-the-Air (OTA) mobile bundle updates without App Store review wait"
+      ],
+      "limitations": [
+        "Less suited for heavy print DTP or complex clinical/legal document workflows than Trados/memoQ"
+      ],
+      "ai_capabilities": [
+        "Lokalise AI (context & style-guide driven LLM translation, automatic LQA checks, variant generation)"
+      ]
     },
     {
       "id": "tool-ooona",
@@ -61,12 +205,40 @@
       "category": "Media & AVT Cloud Platform",
       "vendor": "OOONA",
       "pricing": "Monthly subscription per user/module (~$35–$150+/mo) + Enterprise ERP",
-      "users": ["Subtitlers", "Media localization agencies", "OTT broadcast QC specialists"],
-      "integrations": ["Netflix / OTT delivery specs", "ASR transcription engines", "Pro Tools export", "Cloud storage"],
-      "file_support": ["TTML", "IMSC1", "DFXP", "SRT", "VTT", "STL (EBU)", "SCC", "CAP", "PAC", "ASS/SSA"],
-      "strengths": ["Browser-based professional subtitling, spotting, shot-change detection, and media ERP management"],
-      "limitations": ["Requires stable broadband for high-res proxy video streaming"],
-      "ai_capabilities": ["AI speech-to-text auto-spotting", "Automated shot-change alignment", "MT subtitle pre-translation"]
+      "users": [
+        "Subtitlers",
+        "Media localization agencies",
+        "OTT broadcast QC specialists"
+      ],
+      "integrations": [
+        "Netflix / OTT delivery specs",
+        "ASR transcription engines",
+        "Pro Tools export",
+        "Cloud storage"
+      ],
+      "file_support": [
+        "TTML",
+        "IMSC1",
+        "DFXP",
+        "SRT",
+        "VTT",
+        "STL (EBU)",
+        "SCC",
+        "CAP",
+        "PAC",
+        "ASS/SSA"
+      ],
+      "strengths": [
+        "Browser-based professional subtitling, spotting, shot-change detection, and media ERP management"
+      ],
+      "limitations": [
+        "Requires stable broadband for high-res proxy video streaming"
+      ],
+      "ai_capabilities": [
+        "AI speech-to-text auto-spotting",
+        "Automated shot-change alignment",
+        "MT subtitle pre-translation"
+      ]
     },
     {
       "id": "tool-xbench",
@@ -74,12 +246,86 @@
       "category": "Automated Linguistic QA Tool",
       "vendor": "ApSIC",
       "pricing": "Annual subscription (~€119/year per seat)",
-      "users": ["Linguists", "QA specialists", "Localization engineers", "LSP reviewers"],
-      "integrations": ["Trados Studio", "memoQ", "Phrase", "Crowdin", "Smartling", "POEdit"],
-      "file_support": ["SDLXLIFF", "MQXLIFF", "MXLIFF", "XLIFF", "TMX", "TBX", "PO", "JSON", "SRT"],
-      "strengths": ["Blazing-fast batch verification across dozens of bilingual files for number/tag mismatch, key terms, regex patterns, and target inconsistencies"],
-      "limitations": ["Rule-based/deterministic engine (does not natively judge semantic fluency without LLM integration)"],
-      "ai_capabilities": ["Complements LLM semantic LQA by catching deterministic tag, placeholder, and glossary compliance defects"]
+      "users": [
+        "Linguists",
+        "QA specialists",
+        "Localization engineers",
+        "LSP reviewers"
+      ],
+      "integrations": [
+        "Trados Studio",
+        "memoQ",
+        "Phrase",
+        "Crowdin",
+        "Smartling",
+        "POEdit"
+      ],
+      "file_support": [
+        "SDLXLIFF",
+        "MQXLIFF",
+        "MXLIFF",
+        "XLIFF",
+        "TMX",
+        "TBX",
+        "PO",
+        "JSON",
+        "SRT"
+      ],
+      "strengths": [
+        "Blazing-fast batch verification across dozens of bilingual files for number/tag mismatch, key terms, regex patterns, and target inconsistencies"
+      ],
+      "limitations": [
+        "Rule-based/deterministic engine (does not natively judge semantic fluency without LLM integration)"
+      ],
+      "ai_capabilities": [
+        "Complements LLM semantic LQA by catching deterministic tag, placeholder, and glossary compliance defects"
+      ]
+    },
+    {
+      "id": "tool-modelfront-openloc",
+      "tool": "ModelFront & OpenLoc",
+      "category": "AI Quality Prediction (QE), Automatic Post-Editing (APE) & Open AI-Native TMS",
+      "vendor": "ModelFront Inc.",
+      "pricing": "OpenLoc TMS is 100% free & open (self-host or at-cost enterprise hosting; zero AI tax); ModelFront QE/APE uses outcome-based pricing",
+      "users": [
+        "Fortune 500 localization teams",
+        "Patent/IP platforms",
+        "Travel & E-commerce marketplaces",
+        "AI-forward LSPs"
+      ],
+      "integrations": [
+        "OpenLoc native",
+        "System-wide MCP (Model Context Protocol)",
+        "Trados",
+        "Phrase",
+        "Smartling",
+        "Custom REST API",
+        "Any LLM/MT engine"
+      ],
+      "file_support": [
+        "XLIFF",
+        "TMX",
+        "TBX",
+        "JSON",
+        "PO",
+        "HTML",
+        "XML",
+        "CSV",
+        "All standard TMS formats via MCP/API"
+      ],
+      "strengths": [
+        "Eliminates legacy TMS lock-in and AI word taxes",
+        "Safely automates 70–90% of words by predicting human quality and auto-fixing translations before triggering human review"
+      ],
+      "limitations": [
+        "Designed for AI-first verification workflows rather than legacy manual DTP typesetting"
+      ],
+      "ai_capabilities": [
+        "Reference-free Quality Prediction (QE)",
+        "Automatic Post-Editing (APE)",
+        "Context & RAG Prompt Builder",
+        "System-wide MCP agent control"
+      ]
     }
   ]
 }
