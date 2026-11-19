@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "database": "Quality, Technical & Regulatory Standards (Part 10 & Part 29.8)",
+  "fields": ["id", "standard", "title", "issuing_organization", "scope", "applicable_segments", "mandatory_or_voluntary", "key_requirements", "certification_mechanism"],
+  "records": [
+    {
+      "id": "std-iso-17100",
+      "standard": "ISO 17100:2015",
+      "title": "Translation services — Requirements for translation services",
+      "issuing_organization": "ISO (TC 37/SC 5)",
+      "scope": "Specifies requirements for all aspects of the translation process directly affecting quality and delivery, including translator/reviser qualifications and mandatory bilingual revision.",
+      "applicable_segments": ["Enterprise translation", "Regulated document localization", "LSP procurement RFPs"],
+      "mandatory_or_voluntary": "Voluntary standard (frequently contractually mandated in government and enterprise RFPs)",
+      "key_requirements": ["Translator graduate degree in translation OR degree + 2 yrs experience OR 5 yrs full-time professional experience", "Mandatory independent bilingual revision ('four-eyes principle')", "Documented pre-production, project management, and feedback processes"],
+      "certification_mechanism": "Third-party accredited certification audit (e.g., Austrian Standards, Bureau Veritas, TÜV) with annual surveillance audits."
+    },
+    {
+      "id": "std-iso-18587",
+      "standard": "ISO 18587:2017",
+      "title": "Translation services — Post-editing of machine translation output — Requirements",
+      "issuing_organization": "ISO (TC 37/SC 5)",
+      "scope": "Defines requirements for the process of full and light human post-editing of machine translation output (MTPE) and post-editor competencies.",
+      "applicable_segments": ["MTPE workflows", "High-volume technical & e-commerce localization"],
+      "mandatory_or_voluntary": "Voluntary (contractually referenced in enterprise MTPE SLAs)",
+      "key_requirements": ["Distinguishes Full Post-Editing (human-equivalent publishable quality) vs. Light Post-Editing (comprehensible/accurate)", "Post-editors must meet ISO 17100 translator competence criteria plus specialized MTPE training"],
+      "certification_mechanism": "Third-party conformity assessment / audit alongside ISO 17100."
+    },
+    {
+      "id": "std-iso-5060",
+      "standard": "ISO 5060:2024",
+      "title": "Translation services — Evaluation of translation output — General guidance",
+      "issuing_organization": "ISO (TC 37/SC 5)",
+      "scope": "Establishes harmonized principles for analytic error-typology evaluation of human, MTPE, and unedited translation output (aligned with MQM concepts).",
+      "applicable_segments": ["Linguistic Quality Assurance (LQA)", "Vendor evaluation", "AI/MT evaluation"],
+      "mandatory_or_voluntary": "Voluntary guidance standard",
+      "key_requirements": ["Defines error categories (Accuracy, Linguistic conventions, Terminology, Style, Locale conventions, Design/Markup)", "Severity levels (Critical, Major, Minor, Neutral)", "Pre-evaluation sampling, evaluator qualification, and score calculation"],
+      "certification_mechanism": "Guidance standard (implemented via LQA scorecards and TMS QA modules)."
+    },
+    {
+      "id": "std-mqm-astm",
+      "standard": "MQM / ASTM F3614",
+      "title": "Multidimensional Quality Metrics (MQM) Framework",
+      "issuing_organization": "QTLaunchPad / DFKI / TAUS / ASTM International",
+      "scope": "Hierarchical analytic error typology and scoring framework for evaluating human, MT, and LLM translation quality.",
+      "applicable_segments": ["Enterprise LQA", "WMT academic/frontier LLM benchmarks", "Automated Quality Estimation"],
+      "mandatory_or_voluntary": "Industry de facto standard",
+      "key_requirements": ["7 core dimensions: Terminology, Accuracy, Linguistic Conventions, Style, Locale Conventions, Audience Appropriateness, Design & Markup", "Penalty weights per severity normalized per 1,000 words"],
+      "certification_mechanism": "Adopted directly in TMS platforms (Phrase, Smartling, RWS) and LLM evaluation benchmarks."
+    },
+    {
+      "id": "std-bcp47-cldr",
+      "standard": "IETF BCP 47 & Unicode CLDR",
+      "title": "Tags for Identifying Languages (RFC 5646) & Common Locale Data Repository",
+      "issuing_organization": "IETF & Unicode Consortium",
+      "scope": "Global technical syntax for language/script/region tags (e.g., zh-Hans-CN, sr-Latn-RS, es-419) and locale formatting data (dates, plurals, currencies, collation).",
+      "applicable_segments": ["Software internationalization (i18n)", "Web HTML lang/hreflang", "XLIFF/TMX/TBX metadata", "OS & browser engines"],
+      "mandatory_or_voluntary": "Mandatory technical interoperability standard across all modern operating systems, browsers, and localization files",
+      "key_requirements": ["Subtag sequence: language-extlang-script-region-variant-extension-privateuse (ISO 639 + ISO 15924 + ISO 3166-1 / UN M.49)", "CLDR plural category rules (zero, one, two, few, many, other)"],
+      "certification_mechanism": "Technical parser validation & ICU library conformance."
+    },
+    {
+      "id": "std-iso-13485-mdr",
+      "standard": "ISO 13485:2016 & EU MDR (2017/745)",
+      "title": "Medical Devices Quality Management Systems & EU Medical Device Regulation",
+      "issuing_organization": "ISO & European Union",
+      "scope": "Quality management system for medical device design/production and legal mandate requiring device labels, IFUs, and software UI in up to 24 official EU member-state languages.",
+      "applicable_segments": ["Medical device localization", "In-Vitro Diagnostics (IVDR)", "Software as a Medical Device (SaMD)"],
+      "mandatory_or_voluntary": "Legally mandatory for EU market access (CE marking) and quality-audited for medical suppliers",
+      "key_requirements": ["Documented traceability, CAPA (Corrective and Preventive Action), version control, and verified translation accuracy prior to device distribution"],
+      "certification_mechanism": "Notified Body audit (CE mark) & ISO 13485 accredited certification."
+    }
+  ]
+}

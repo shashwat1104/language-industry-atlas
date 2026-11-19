@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "database": "Industry Opportunity Radar (Part 26, Part 29.10 & Addendum A.7)",
+  "fields": ["id", "title", "classification", "problem", "market_segment", "product_solution", "target_customer", "existing_competitors", "gap_defensibility", "mvp_spec", "revenue_model", "difficulty", "ai_opportunity_score"],
+  "records": [
+    {
+      "id": "opp-visual-context-harvester",
+      "title": "Autonomous UI Visual-Context Harvester for CAT/TMS",
+      "classification": "Micro SaaS / AI Agent / Developer Tool",
+      "problem": "Software translators see isolated JSON keys like 'btn_charge_post' without knowing if 'charge' means billing a credit card or charging an EV battery—causing 60%+ of SaaS LQA bugs.",
+      "market_segment": "Software & SaaS Localization",
+      "product_solution": "Headless Playwright + Vision-LLM agent that crawls staging builds on every PR, maps DOM elements back to i18n keys, captures bounding-box screenshots, and pushes visual context + disambiguation notes automatically into Lokalise/Crowdin/Phrase/Smartling.",
+      "target_customer": ["B2B/B2C SaaS engineering & localization teams", "Boutique software LSPs"],
+      "existing_competitors": ["Manual browser extensions (Smartling/Lokalise Chrome extensions)", "Figma plugins (only cover design stage, not live app state)"],
+      "gap_defensibility": "Zero-human-click staging crawl tied directly to Git PR diffs and AST key tracing.",
+      "mvp_spec": "GitHub Action + Playwright script that Instruments React i18next keys in DOM data-attributes, captures screenshots of changed routes, and uploads via Lokalise/Crowdin REST API.",
+      "revenue_model": "$99–$499/month SaaS per repository based on active key volume",
+      "difficulty": "Medium (Solo-founder buildable in 3–4 weeks)",
+      "ai_opportunity_score": 9
+    },
+    {
+      "id": "opp-eu-mdr-ifu-compliance-engine",
+      "title": "EU MDR / IVDR 24-Language IFU Change-Impact & Traceability Engine",
+      "classification": "Enterprise Vertical SaaS",
+      "problem": "Medical device manufacturers updating a single safety warning in an English IFU (Instructions for Use) struggle to audit and prove across 24 EU languages and 50+ SKUs that every IDML/PDF leaflet matches the exact regulatory revision.",
+      "market_segment": "Clinical, Medical & Life Sciences Localization",
+      "product_solution": "Automated XML/IDML/PDF semantic diff and regulatory traceability engine that verifies 24-language alignment against master English source changes and generates ISO 13485 audit-ready verification dossiers.",
+      "target_customer": ["Mid-market MedTech QA/Regulatory Affairs teams", "Life Sciences LSPs"],
+      "existing_competitors": ["Manual bilingual spreadsheet checklists", "Generic PDF diff tools (TVT / GlobalVision)"],
+      "gap_defensibility": "Cross-language semantic equivalence verification combined with deterministic regulatory audit trails.",
+      "mvp_spec": "IDML + PDF extractor that aligns multilingual paragraph blocks against source revision diffs and flags missing/untranslated safety warnings.",
+      "revenue_model": "$1,500–$5,000/month B2B compliance subscription",
+      "difficulty": "High (Requires ISO 13485 / MedTech domain validation)",
+      "ai_opportunity_score": 9
+    },
+    {
+      "id": "opp-interpreter-live-hud-copilot",
+      "title": "Real-Time Cognitive-Relief HUD Copilot for Human Interpreters",
+      "classification": "Micro SaaS / Desktop & Booth Companion App",
+      "problem": "Simultaneous and medical interpreters experience extreme cognitive overload (Gile's Effort Model) when speakers rattle off rapid numbers, dosages, acronyms, and proper nouns.",
+      "market_segment": "Spoken Language Interpreting",
+      "product_solution": "Low-latency (<300ms) local/edge audio listener that extracts ONLY numbers (with unit/currency conversions), proper names, and client glossary hits onto a minimalist heads-up display—without distracting full-sentence transcription.",
+      "target_customer": ["Freelance conference interpreters (AIIC)", "Medical/legal VRI interpreters", "Interpretation agencies"],
+      "existing_competitors": ["InterpretBank ASR", "KUDO AI assist"],
+      "gap_defensibility": "Ultra-low latency entity/number-only visual ergonomics specifically designed around interpreter cognitive load theory.",
+      "mvp_spec": "Desktop Electron/Tauri app capturing system loopback audio, running streaming ASR + deterministic number/TBX matcher with <250ms display latency.",
+      "revenue_model": "$29–$49/month pro interpreter subscription",
+      "difficulty": "Medium",
+      "ai_opportunity_score": 8
+    },
+    {
+      "id": "opp-i18n-precommit-defect-linter",
+      "title": "Open-Source i18n Defect & Concatenation AST Scanner",
+      "classification": "Open-Source Tool + Commercial CI Cloud",
+      "problem": "Developers routinely commit hardcoded strings, string concatenations ('Hello ' + user + ', you have ' + count + ' items'), and broken ICU plural syntax that aren't discovered until localization fails weeks later.",
+      "market_segment": "Internationalization (i18n) Engineering",
+      "product_solution": "Tree-sitter AST static analyzer + LLM autofixer CLI that detects hardcoded UI strings, grammar-breaking concatenations, locale-unsafe Date/Number formatting, and auto-rewrites them into ICU MessageFormat.",
+      "target_customer": ["Software engineering teams", "Localization engineers"],
+      "existing_competitors": ["Lingoport Globalyzer (enterprise-only, expensive)", "Basic ESLint i18n plugins"],
+      "gap_defensibility": "Open-source developer adoption bottom-up with automated PR autofix patches.",
+      "mvp_spec": "CLI tool supporting TypeScript/React + Vue + Flutter with GitHub Action PR annotations.",
+      "revenue_model": "Open-core (Free CLI; $49–$299/mo team dashboard & automated PR autofixer)",
+      "difficulty": "Low-Medium",
+      "ai_opportunity_score": 9
+    }
+  ]
+}

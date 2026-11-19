@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "database": "Language Pairs & Corridors (Part 5 & Part 29.6)",
+  "fields": ["id", "source", "target", "corridor_code", "resource_tier", "demand_level", "supply_level", "primary_industries", "typical_rate_range_usd", "pricing_unit", "ai_mt_capability", "linguistic_technical_risks"],
+  "records": [
+    {
+      "id": "lp-en-ja",
+      "source": "English",
+      "target": "Japanese",
+      "corridor_code": "EN -> JA",
+      "resource_tier": "High-Resource (Structurally Divergent)",
+      "demand_level": "Tier-1 Very High",
+      "supply_level": "Tight (Specialist deficit in SaaS, Patents, Clinical)",
+      "primary_industries": ["Enterprise SaaS", "Video Games", "Pharmaceuticals & Clinical", "Patents", "Luxury & E-commerce"],
+      "typical_rate_range_usd": "$0.14–$0.28 per source word (human TEP); $0.07–$0.14 (MTPE)",
+      "pricing_unit": "Per English source word",
+      "ai_mt_capability": "High on literal prose (DeepL / Claude 3.5 / GPT-4o), Moderate-to-Fragile on UI context, zero-pronoun resolution, and keigo register selection.",
+      "linguistic_technical_risks": ["Missing subject/pronoun hallucination in UI strings", "Wrong keigo (sonkeigo vs. kenjougo) politeness register", "Kanji/Katakana loanword balance", "Line-break/kinsoku shori violations"]
+    },
+    {
+      "id": "lp-ja-en",
+      "source": "Japanese",
+      "target": "English",
+      "corridor_code": "JA -> EN",
+      "resource_tier": "High-Resource (Structurally Divergent)",
+      "demand_level": "Tier-1 High",
+      "supply_level": "Moderate-Tight (Native EN translators reading domain-level Japanese)",
+      "primary_industries": ["Video Games & Anime/Manga", "Automotive Engineering", "Patents (JPO -> USPTO)", "IR & Financial Disclosures"],
+      "typical_rate_range_usd": "$0.07–$0.16 per Japanese source character (~$0.14–$0.32/equivalent EN word)",
+      "pricing_unit": "Per Japanese character (moji)",
+      "ai_mt_capability": "Moderate-High; LLMs handle topic-comment ellipsis better than older NMT but still hallucinate implied subjects in uncontextualized game dialogue and patent claims.",
+      "linguistic_technical_risks": ["Omitted grammatical subjects in Japanese misattributed to wrong speaker", "Patent claim scope distortion", "Cultural/honorific flattening in literary & game scripts"]
+    },
+    {
+      "id": "lp-en-de",
+      "source": "English",
+      "target": "German",
+      "corridor_code": "EN -> DE",
+      "resource_tier": "High-Resource",
+      "demand_level": "Tier-1 Very High",
+      "supply_level": "High (but DACH engineering/medical specialists command premium rates)",
+      "primary_industries": ["Industrial & Automotive Engineering", "Medical Devices (EU MDR)", "Enterprise Software/SAP", "E-commerce", "Legal/Finance"],
+      "typical_rate_range_usd": "$0.12–$0.22 per source word (human TEP); $0.05–$0.10 (MTPE)",
+      "pricing_unit": "Per English source word",
+      "ai_mt_capability": "Very High (DeepL and frontier LLMs reach near-human fluency on standard prose, requiring mostly terminology, gender/inclusivity, and UI length review).",
+      "linguistic_technical_risks": ["20–35% text expansion breaking fixed mobile/embedded UI buttons", "Compound noun hyphenation (Deppenleerzeichen)", "Du vs. Sie formality mismatch", "Gender-inclusive styling rules (Genderstern/Binnen-I)"]
+    },
+    {
+      "id": "lp-en-es-latam",
+      "source": "English",
+      "target": "Spanish (Latin America / US Hispanic)",
+      "corridor_code": "EN -> ES-419 / ES-US",
+      "resource_tier": "High-Resource",
+      "demand_level": "Tier-1 Very High",
+      "supply_level": "Very High",
+      "primary_industries": ["US Healthcare & Government Access", "Streaming & Dubbing (Miami/Mexico City)", "Fintech & Consumer Apps", "E-learning"],
+      "typical_rate_range_usd": "$0.07–$0.14 per source word (human TEP); $0.03–$0.07 (MTPE)",
+      "pricing_unit": "Per English source word",
+      "ai_mt_capability": "Very High; heavily automated with MTQE and light post-editing for standard commercial content.",
+      "linguistic_technical_risks": ["Regional lexical clashes (Mexico vs. Argentina voseo vs. US neutral Spanish)", "20–25% text expansion", "Regulatory health literacy grade-level compliance in US Medicaid/ACA notices"]
+    },
+    {
+      "id": "lp-en-ar",
+      "source": "English",
+      "target": "Arabic (Modern Standard Arabic / Gulf Locales)",
+      "corridor_code": "EN -> AR",
+      "resource_tier": "High-to-Medium Resource (Diglossic & Bidirectional)",
+      "demand_level": "High & Accelerating (Saudi Vision 2030 / UAE digital expansion)",
+      "supply_level": "Moderate",
+      "primary_industries": ["Government & Smart City Mega-Projects", "E-commerce & Luxury Retail", "Gaming & Esports", "Fintech", "Energy"],
+      "typical_rate_range_usd": "$0.09–$0.18 per source word",
+      "pricing_unit": "Per English source word",
+      "ai_mt_capability": "High on formal MSA news/legal text; Lower on Gulf/Egyptian/Levantine conversational dialects and complex bidirectional UI tags.",
+      "linguistic_technical_risks": ["BiDi (RTL/LTR) punctuation and inline number/code corruption", "Font ligature breaking in PDF/InDesign", "MSA vs. local khaleeji dialect mismatch in marketing/social media", "Dual/plural grammatical forms (6 plural categories in CLDR)"]
+    },
+    {
+      "id": "lp-en-hi",
+      "source": "English",
+      "target": "Hindi",
+      "corridor_code": "EN -> HI",
+      "resource_tier": "Medium-to-High Resource",
+      "demand_level": "High Volume / Rapid Digital Growth",
+      "supply_level": "High (General) / Tight (Technical, Clinical, Natural Hinglish UX)",
+      "primary_industries": ["Mobile Apps & Fintech (UPI)", "OTT & YouTube Dubbing", "Government (Bhashini)", "EdTech", "Clinical Trials"],
+      "typical_rate_range_usd": "$0.04–$0.09 per source word",
+      "pricing_unit": "Per English source word",
+      "ai_mt_capability": "Improving rapidly (GPT-4o, Google, Sarvam/IndicTrans2), but MT often defaults to overly Sanskritized dictionary Hindi (Shuddh Hindi) that feels unnatural to everyday mobile users.",
+      "linguistic_technical_risks": ["Overly formal Sanskritized vocabulary alienating consumer app users vs. natural conversational Hindi/Hinglish", "Devanagari conjunct glyph clipping in vertical UI line-height", "Unicode normalization (NFC vs. NFD) of nukta characters"]
+    }
+  ]
+}

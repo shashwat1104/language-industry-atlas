@@ -1,0 +1,39 @@
+# Caddyfile snippet for The Complete Language Industry Atlas
+# Append this block to /etc/caddy/Caddyfile on your Hostinger VPS and run:
+#   sudo mkdir -p /var/www/language-atlas
+#   sudo chown -R $USER:$USER /var/www/language-atlas
+#   sudo systemctl reload caddy
+
+language.shashwat.wtf, langauge.shashwat.wtf {
+    root * /var/www/language-atlas
+    encode zstd gzip
+    file_server
+
+    # Canonical redirect from typo domain if pointed via DNS
+    @typo host langauge.shashwat.wtf
+    redir @typo https://language.shashwat.wtf{uri} permanent
+
+    # Custom 404 page from Starlight build
+    handle_errors {
+        @404 {
+            expression {http.error.status_code} == 404
+        }
+        rewrite @404 /404.html
+        file_server
+    }
+
+    # Cache static hashed assets aggressively
+    @immutable {
+        path /_astro/* /pagefind/*
+    }
+    header @immutable Cache-Control "public, max-age=31536000, immutable"
+
+    # Standard security headers
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "geolocation=(), microphone=(), camera=()"
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    }
+}

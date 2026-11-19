@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "database": "Production Workflows (Part 6 & Part 29.7)",
+  "fields": ["id", "workflow", "code", "steps", "roles", "inputs", "tools", "outputs", "qa_gates", "failure_points", "ai_automation_potential"],
+  "records": [
+    {
+      "id": "wf-iso17100-tep",
+      "workflow": "Standard Enterprise TEP (Translation, Editing, Proofreading)",
+      "code": "Part 6.A",
+      "steps": [
+        "1. Client intake, scope & file analyzability check",
+        "2. File preparation & CAT filter segmentation",
+        "3. TM leverage, termbase attachment & word-count matrix",
+        "4. Translation by native domain-qualified translator",
+        "5. Bilingual revision (Editing) by independent second linguist",
+        "6. Automated QA check (tags, numbers, terminology) + Final layout proofreading",
+        "7. Target file generation, PM sign-off, delivery & TM update"
+      ],
+      "roles": ["Localization PM", "Localization Engineer", "Translator", "Reviser/Editor", "Proofreader/DTP QA"],
+      "inputs": ["Source files (DOCX, IDML, JSON, XML)", "Translation Memory (.tmx)", "Termbase (.tbx)", "Style guide"],
+      "tools": ["Trados Studio", "memoQ", "Phrase TMS", "Xbench", "Verifika"],
+      "outputs": ["Localized target files", "Updated master TM (.tmx)", "LQA scorecard"],
+      "qa_gates": ["Deterministic tag/number verification", "ISO 17100 four-eyes bilingual revision", "MQM/DQF sampling"],
+      "failure_points": ["Corrupted inline tags breaking target compilation", "Skipped bilingual revision under rush deadline", "Outdated reference TM overwriting approved terms"],
+      "ai_automation_potential": "70–85% of initial drafting automated via LLM/NMT + MTQE routing; human revision shifts to high-risk/low-MTQE segments."
+    },
+    {
+      "id": "wf-continuous-software-l10n",
+      "workflow": "Continuous Software & SaaS Localization (CI/CD)",
+      "code": "Part 6.C",
+      "steps": [
+        "1. Developer commits UI code with externalized i18n keys (ICU MessageFormat)",
+        "2. CI webhook / Git connector pushes new/modified source keys to TMS",
+        "3. Automated screenshot/Figma context harvester attaches visual preview to keys",
+        "4. AI/MT pre-translation + Glossary check + MTQE triage",
+        "5. Human linguist reviews flagged keys in browser editor with visual context",
+        "6. Automated placeholder/ICU syntax linter validates target strings",
+        "7. TMS opens automated Git Pull Request or publishes OTA mobile bundle"
+      ],
+      "roles": ["Software Engineer", "Localization Engineer", "Product Designer", "SaaS Linguist", "LQA Tester"],
+      "inputs": ["en.json / .arb / .strings / .xml", "Figma frames", "PR diff metadata"],
+      "tools": ["Lokalise", "Crowdin", "Phrase Strings", "Smartling", "GitHub Actions", "Playwright"],
+      "outputs": ["Localized resource bundles (ja.json, de.json, etc.)", "OTA delta manifest"],
+      "qa_gates": ["ICU plural/placeholder syntax compilation check", "Pseudo-localization overflow check", "In-context visual LQA"],
+      "failure_points": ["Hardcoded strings bypassed in source code", "Broken {variable} placeholder causing runtime crash", "Concatenated strings destroying word order in SOV languages"],
+      "ai_automation_potential": "85–95% of sync, pre-translation, context capture, and syntax validation automated."
+    },
+    {
+      "id": "wf-clinical-linguistic-validation",
+      "workflow": "Clinical Trial eCOA / PRO Linguistic Validation (ISPOR)",
+      "code": "Part 6.G",
+      "steps": [
+        "1. Concept elaboration guide created with instrument developer",
+        "2. Dual independent forward translations (T1 + T2) by native clinical linguists",
+        "3. Reconciliation into single harmonized target version (T12)",
+        "4. Blind back-translation (BT1 + BT2) into source language by native English translators",
+        "5. Back-translation review & harmonization with clinical survey developer",
+        "6. Cognitive debriefing interviews with 5–8 native patients in target country",
+        "7. Final clinical review, eCOA screen migration screenshot proofreading & certification"
+      ],
+      "roles": ["Linguistic Validation PM", "Instrument Developer", "2x Forward Medical Translators", "Reconciler", "2x Back-Translators", "In-Country Cognitive Debriefing Interviewer", "eCOA QA Specialist"],
+      "inputs": ["Source PRO questionnaire", "Concept Definition Document", "eCOA tablet screen templates"],
+      "tools": ["RWS/TransPerfect Clinical portals", "Encrypted patient interview tracking", "Screenshot validation tools"],
+      "outputs": ["Validated eCOA instrument", "Certificate of Linguistic Validation", "FDA/EMA audit trail dossier"],
+      "qa_gates": ["Dual forward/back blind independence check", "Patient comprehension threshold in cognitive debriefing", "100% eCOA screenshot verification"],
+      "failure_points": ["Literal translation altering psychometric scale weight (e.g. 'mild' vs 'slight')", "Back-translator having access to source text", "Line wrap clipping clinical scale anchors on patient tablet"],
+      "ai_automation_potential": "25–35% (AI assists with back-translation discrepancy comparison and schedule logistics, but regulatory bodies mandate human translators and real patient cognitive debriefing)."
+    },
+    {
+      "id": "wf-ai-agentic-localization",
+      "workflow": "AI-Native Risk-Tiered Agentic Localization Pipeline",
+      "code": "Part 6.L",
+      "steps": [
+        "1. Source intake & automated content/risk classification (Tier 1 Legal/Brand vs. Tier 3 Support/UGC)",
+        "2. Context extraction agent pulls product metadata, UI screenshots, and user persona",
+        "3. RAG retrieval fetches top fuzzy TM matches, TBX glossary terms, and style rules",
+        "4. Dynamic model router selects optimal LLM/NMT per language pair & domain",
+        "5. Parallel candidate generation + Automated MQM/LLM-as-a-Judge Quality Estimation (QE)",
+        "6. Self-correction loop fixes deterministic tag/glossary violations; routes segments below QE threshold to human specialist",
+        "7. Human-in-the-loop expert sign-off -> automated delivery -> continuous feedback fine-tuning"
+      ],
+      "roles": ["AI Localization Architect", "Prompt/Eval Engineer", "Domain Linguist-in-the-Loop", "Automated QA Agent"],
+      "inputs": ["Source payload via API/Webhook", "Vectorized TM/Termbase", "Brand voice rubric"],
+      "tools": ["Smartling AI Hub", "Phrase NextMT/Auto LQA", "COMET/MetricX QE models", "LangGraph/Custom LLM orchestrators"],
+      "outputs": ["Risk-scored localized content", "Segment-level QE confidence telemetry", "Continuous TM/preference dataset"],
+      "qa_gates": ["Deterministic schema/placeholder parser", "COMET-Kiwi / LLM-MQM automated threshold", "Human sign-off on high-risk/flagged segments"],
+      "failure_points": ["Uncalibrated QE model passing confident LLM hallucinations", "Prompt injection in user-generated source content", "Context window truncation dropping tail segments"],
+      "ai_automation_potential": "80–95% autonomous execution for low/medium-risk tiers; 40–60% cycle-time reduction on high-risk human-reviewed tiers."
+    }
+  ]
+}

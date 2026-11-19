@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "database": "Career Map & Role Survival Analysis (Part 23, Part 29.9 & Addendum A.4)",
+  "fields": ["id", "role", "category", "responsibilities", "skills", "tools", "salary_range_usd", "progression", "tasks_automated_first", "tasks_surviving_longer", "new_ai_tasks", "ai_disruption_score"],
+  "records": [
+    {
+      "id": "role-translator-linguist",
+      "role": "Domain Specialist Translator & Post-Editor",
+      "category": "Linguistic Production",
+      "responsibilities": ["Translate and adapt domain-specific source text", "Perform Full/Light MTPE and LLM output evaluation", "Maintain termbases and query client SMEs", "Run deterministic QA checks before delivery"],
+      "skills": ["C2 native target mastery", "Deep vertical domain knowledge (Clinical, Patent, Legal, Gaming)", "CAT/TMS proficiency", "AI prompt & error typology judgment"],
+      "tools": ["Trados Studio", "memoQ", "Phrase", "Xbench", "DeepL"],
+      "salary_range_usd": "$45,000–$95,000 (in-house US/EU) | $30,000–$120,000+ (specialist freelancer)",
+      "progression": ["Junior Translator", "Senior Domain Linguist", "Lead Language Specialist / LQA Lead", "AI Linguistic Evaluator / Terminologist"],
+      "tasks_automated_first": ["First-pass translation of boilerplate commercial, support, and general technical prose"],
+      "tasks_surviving_longer": ["High-stakes liability review (patents, clinical ICFs)", "Creative transcreation", "Cultural sensitivity sign-off"],
+      "new_ai_tasks": ["RLHF preference ranking", "System prompt & style-guide engineering", "MQM root-cause auditing of LLM pipelines"],
+      "ai_disruption_score": 8
+    },
+    {
+      "id": "role-localization-engineer",
+      "role": "Localization & i18n Engineer",
+      "category": "Technical & Engineering",
+      "responsibilities": ["Build custom file parsers/filters (XML, JSON, IDML, regex)", "Automate CI/CD string sync between Git repos and TMS", "Fix corrupted tags, encoding, and BiDi layout bugs", "Architect LLM/MT routing and automated QA pipelines"],
+      "skills": ["Python / TypeScript / Regex", "XLIFF / TMX / TBX / Okapi Framework", "ICU MessageFormat & Unicode CLDR", "GitHub Actions / REST APIs / LLM orchestration"],
+      "tools": ["Okapi Rainbow", "Passolo", "Trados/Phrase APIs", "GitHub Actions", "Python", "Playwright"],
+      "salary_range_usd": "$85,000–$155,000 (US) | €55,000–€95,000 (EU)",
+      "progression": ["Junior Loc Engineer", "Senior Localization Engineer", "Internationalization (i18n) Architect", "Head of Localization Technology"],
+      "tasks_automated_first": ["Manual file format conversion and repetitive folder prep/kickoff scripts"],
+      "tasks_surviving_longer": ["Complex legacy codebase i18n refactoring", "Enterprise TMS-to-CMS/ERP integration architecture"],
+      "new_ai_tasks": ["Building RAG-augmented TM/TB retrieval pipelines", "Automated COMET/LLM-as-a-Judge evaluation harnesses"],
+      "ai_disruption_score": 4
+    },
+    {
+      "id": "role-localization-pm",
+      "role": "Localization Project / Program Manager",
+      "category": "Operations & Management",
+      "responsibilities": ["Scope, quote, and schedule multilingual projects", "Coordinate linguists, engineers, DTP, and QA vendors", "Manage gross margin, budgets, and SLA timelines", "Lead stakeholder communication and risk mitigation"],
+      "skills": ["Financial margin & unit-economics control", "TMS/BMS workflow automation", "Cross-cultural vendor negotiation", "Risk & regulatory compliance management"],
+      "tools": ["XTRF", "Plunet", "Phrase", "Smartling", "Jira", "Excel/BI dashboards"],
+      "salary_range_usd": "$60,000–$115,000 (LSP PM to Enterprise Localization Program Manager, US)",
+      "progression": ["Project Coordinator", "Localization PM", "Senior Account/Program Manager", "Director of Localization Operations"],
+      "tasks_automated_first": ["Manual file handoffs, word-count quoting, routine vendor assignment emails, and status tracking"],
+      "tasks_surviving_longer": ["Enterprise stakeholder alignment, exception recovery, multi-department launch governance"],
+      "new_ai_tasks": ["Designing risk-tiered AI vs. human routing workflows", "Managing AI inference vs. human edit cost budgets"],
+      "ai_disruption_score": 6
+    },
+    {
+      "id": "role-interpreter",
+      "role": "Conference, Medical & Legal Interpreter",
+      "category": "Spoken & Signed Language Services",
+      "responsibilities": ["Deliver real-time simultaneous or consecutive interpretation", "Maintain impartiality, accuracy, and confidentiality under high cognitive load", "De-escalate cross-cultural communication barriers in hospitals, courts, and summits"],
+      "skills": ["Bilingual active listening & split-attention speech production", "Note-taking (Rozan/Matyssek systems)", "Medical (CCHI/NBCMI) or Court certification", "RSI booth console proficiency"],
+      "tools": ["KUDO", "Interprefy", "Zoom Interpretation", "LanguageLine InSight", "Booth consoles (ISO 20109)"],
+      "salary_range_usd": "$50,000–$95,000 (Medical/Court) | $600–$1,200+/day (AIIC Conference Interpreter)",
+      "progression": ["OPI/VRI Community Interpreter", "Certified Medical/Court Staff Interpreter", "AIIC Accredited Conference / Diplomatic Interpreter"],
+      "tasks_automated_first": ["Low-stakes travel/hotel check-in queries, one-way webinar captioning, basic routine intake questions"],
+      "tasks_surviving_longer": ["High-stakes oncology/emergency consent, felony court testimony, sensitive diplomatic negotiation, ASL interpreting"],
+      "new_ai_tasks": ["Operating with real-time AI terminology/number HUD copilots during live sessions"],
+      "ai_disruption_score": 5
+    }
+  ]
+}

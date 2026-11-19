@@ -1,0 +1,342 @@
+---
+title: Relational Databases Explorer
+description: Interactive structured tables rendered directly from src/data/*.json across all 10 relational databases (Part 29) plus Authoritative Research Sources (Addendum D).
+---
+
+import segmentsData from '../../../data/segments.json';
+import companiesData from '../../../data/companies.json';
+import toolsData from '../../../data/tools.json';
+import formatsData from '../../../data/file_formats.json';
+import countriesData from '../../../data/countries.json';
+import pairsData from '../../../data/language_pairs.json';
+import workflowsData from '../../../data/workflows.json';
+import standardsData from '../../../data/standards.json';
+import careersData from '../../../data/careers.json';
+import opportunitiesData from '../../../data/opportunities.json';
+import sourcesData from '../../../data/sources.json';
+
+This page renders live structured records directly from the JSON schemas in `src/data/*.json` (defined in **Part 29** and **Mandatory Addendum D** of `ATLAS_MASTER_PROMPT.md`).
+
+---
+
+## 1. Industry Segments Database (`src/data/segments.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Segment</th>
+      <th>Ecosystem Sector</th>
+      <th>Definition</th>
+      <th>Key Tools & Formats</th>
+      <th>Standards</th>
+      <th>AI Disruption (1–10)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {segmentsData.records.map((r) => (
+      <tr>
+        <td><strong>{r.segment}</strong></td>
+        <td>{r.ecosystem_sector}</td>
+        <td>{r.definition}</td>
+        <td>{r.tools.join(', ')}<br/><em>Formats:</em> {r.file_formats.join(', ')}</td>
+        <td>{r.standards.join(', ')}</td>
+        <td><strong>{r.ai_disruption_score}/10</strong></td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 2. Companies Database (`src/data/companies.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>HQ</th>
+      <th>Category</th>
+      <th>Revenue & Verification Source</th>
+      <th>Key Technology</th>
+      <th>Strengths</th>
+    </tr>
+  </thead>
+  <tbody>
+    {companiesData.records.map((r) => (
+      <tr>
+        <td><strong>{r.name}</strong></td>
+        <td>{r.country}</td>
+        <td>{r.category}</td>
+        <td><strong>{r.revenue_usd}</strong><br/><small>({r.revenue_source})</small></td>
+        <td>{r.technology.join(', ')}</td>
+        <td>{r.strengths.join('; ')}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 3. Localization Tools & Software Database (`src/data/tools.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Category</th>
+      <th>Vendor</th>
+      <th>Pricing Model</th>
+      <th>Supported Formats</th>
+      <th>AI Capabilities</th>
+    </tr>
+  </thead>
+  <tbody>
+    {toolsData.records.map((r) => (
+      <tr>
+        <td><strong>{r.tool}</strong></td>
+        <td>{r.category}</td>
+        <td>{r.vendor}</td>
+        <td>{r.pricing}</td>
+        <td>{r.file_support.join(', ')}</td>
+        <td>{r.ai_capabilities.join('; ')}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 4. File Formats Encyclopedia Database (`src/data/file_formats.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Extension</th>
+      <th>Category & Role</th>
+      <th>Bilingual / Editable</th>
+      <th>Purpose & Technical Architecture</th>
+    </tr>
+  </thead>
+  <tbody>
+    {formatsData.records.map((r) => (
+      <tr>
+        <td><strong>{r.format}</strong><br/><small>{r.full_name}</small></td>
+        <td><code>{r.extension}</code></td>
+        <td>{r.category}<br/><small>{r.role_classification}</small></td>
+        <td>Bilingual: {r.bilingual ? 'Yes' : 'No'}<br/>Editable: {r.editable ? 'Yes' : 'No'}</td>
+        <td>{r.purpose}<br/><small><em>Tech:</em> {r.technical_details}</small></td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 5. Countries & National Language Markets (`src/data/countries.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Market Role</th>
+      <th>Primary Language Pairs</th>
+      <th>Key Companies</th>
+      <th>Regulatory Drivers</th>
+    </tr>
+  </thead>
+  <tbody>
+    {countriesData.records.map((r) => (
+      <tr>
+        <td><strong>{r.country}</strong><br/><small>{r.region}</small></td>
+        <td>{r.market_role}<br/><small>{r.estimated_market_tier}</small></td>
+        <td>{r.primary_language_pairs.join(', ')}</td>
+        <td>{r.key_companies.join(', ')}</td>
+        <td>{r.regulations.join(', ')}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 6. Language Pairs & Corridors (`src/data/language_pairs.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Corridor</th>
+      <th>Resource Tier</th>
+      <th>Demand / Supply</th>
+      <th>Typical Rate Range (USD)</th>
+      <th>AI / MT Capability & Risks</th>
+    </tr>
+  </thead>
+  <tbody>
+    {pairsData.records.map((r) => (
+      <tr>
+        <td><strong>{r.corridor_code}</strong><br/><small>{r.source} → {r.target}</small></td>
+        <td>{r.resource_tier}</td>
+        <td><strong>Demand:</strong> {r.demand_level}<br/><strong>Supply:</strong> {r.supply_level}</td>
+        <td>{r.typical_rate_range_usd}<br/><small>({r.pricing_unit})</small></td>
+        <td>{r.ai_mt_capability}<br/><small><em>Risks:</em> {r.linguistic_technical_risks.join('; ')}</small></td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 7. Production Workflows (`src/data/workflows.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Workflow</th>
+      <th>Core Steps</th>
+      <th>Roles & Tools</th>
+      <th>QA Gates</th>
+      <th>AI Automation Potential</th>
+    </tr>
+  </thead>
+  <tbody>
+    {workflowsData.records.map((r) => (
+      <tr>
+        <td><strong>{r.workflow}</strong><br/><small>({r.code})</small></td>
+        <td>{r.steps.join(' → ')}</td>
+        <td><strong>Roles:</strong> {r.roles.join(', ')}<br/><strong>Tools:</strong> {r.tools.join(', ')}</td>
+        <td>{r.qa_gates.join('; ')}</td>
+        <td>{r.ai_automation_potential}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 8. Quality, Technical & Regulatory Standards (`src/data/standards.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Standard</th>
+      <th>Issuing Body</th>
+      <th>Status</th>
+      <th>Scope & Key Requirements</th>
+    </tr>
+  </thead>
+  <tbody>
+    {standardsData.records.map((r) => (
+      <tr>
+        <td><strong>{r.standard}</strong><br/><small>{r.title}</small></td>
+        <td>{r.issuing_organization}</td>
+        <td>{r.mandatory_or_voluntary}</td>
+        <td>{r.scope}<br/><small><strong>Requirements:</strong> {r.key_requirements.join('; ')}</small></td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 9. Career Map & AI Survival Database (`src/data/careers.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Compensation Range</th>
+      <th>Automated First vs. Surviving Tasks</th>
+      <th>New AI-Era Tasks</th>
+      <th>Disruption Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    {careersData.records.map((r) => (
+      <tr>
+        <td><strong>{r.role}</strong><br/><small>{r.category}</small></td>
+        <td>{r.salary_range_usd}</td>
+        <td><strong>Automated First:</strong> {r.tasks_automated_first.join('; ')}<br/><strong>Surviving:</strong> {r.tasks_surviving_longer.join('; ')}</td>
+        <td>{r.new_ai_tasks.join('; ')}</td>
+        <td><strong>{r.ai_disruption_score}/10</strong></td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 10. Industry Opportunity Radar (`src/data/opportunities.json`)
+
+<table>
+  <thead>
+    <tr>
+      <th>Opportunity</th>
+      <th>Classification</th>
+      <th>Workflow Problem & Solution</th>
+      <th>MVP & Revenue Model</th>
+      <th>Opportunity Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    {opportunitiesData.records.map((r) => (
+      <tr>
+        <td><strong>{r.title}</strong><br/><small>{r.market_segment}</small></td>
+        <td>{r.classification}</td>
+        <td><strong>Problem:</strong> {r.problem}<br/><strong>Solution:</strong> {r.product_solution}</td>
+        <td><strong>MVP:</strong> {r.mvp_spec}<br/><strong>Revenue:</strong> {r.revenue_model}</td>
+        <td><strong>{r.ai_opportunity_score}/10</strong></td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+---
+
+## 11. Authoritative Research Sources & Academic Disciplines (`src/data/sources.json`)
+
+### 15 Core Industry, Standards & Research Organizations
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Category</th>
+      <th>Organization</th>
+      <th>Website</th>
+      <th>Research Focus</th>
+    </tr>
+  </thead>
+  <tbody>
+    {sourcesData.organizations.map((o) => (
+      <tr>
+        <td>{o.id}</td>
+        <td>{o.category}</td>
+        <td><strong>{o.organization}</strong></td>
+        <td><a href={o.website} target="_blank" rel="noopener noreferrer">{o.website}</a></td>
+        <td>{o.focus}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+### 12 Core Academic & Research Disciplines
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Discipline</th>
+      <th>Scope & Application in the Atlas</th>
+    </tr>
+  </thead>
+  <tbody>
+    {sourcesData.academic_disciplines.map((d) => (
+      <tr>
+        <td>{d.id}</td>
+        <td><strong>{d.discipline}</strong></td>
+        <td>{d.scope}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>

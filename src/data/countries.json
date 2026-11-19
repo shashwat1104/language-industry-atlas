@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "database": "Countries & Geographic Markets (Part 4.2 & Part 29.5)",
+  "fields": ["id", "country", "region", "market_role", "estimated_market_tier", "official_major_languages", "primary_language_pairs", "key_companies", "talent_ecosystem", "client_industries", "demand_profile", "supply_profile", "regulations"],
+  "records": [
+    {
+      "id": "ctry-usa",
+      "country": "United States",
+      "region": "North America",
+      "market_role": "Tier-1 Buyer & Tier-1 Supplier Hub",
+      "estimated_market_tier": "Largest single national market (~40–45% of global LSP top-100 revenue origination per Nimdzi/CSA)",
+      "official_major_languages": ["English (de facto)", "Spanish", "ASL", "Chinese", "Tagalog", "Vietnamese", "Arabic"],
+      "primary_language_pairs": ["EN -> ES-US", "EN -> Tier-1 Global (FIGS, CJK)", "240+ OPI/VRI healthcare languages <-> EN"],
+      "key_companies": ["TransPerfect", "LanguageLine Solutions", "Lionbridge", "Welocalize", "Smartling", "CyraCom", "Propio"],
+      "talent_ecosystem": "High concentration of enterprise localization program managers (Silicon Valley/Seattle), certified medical/court interpreters, and high-rate specialist translators ($0.14–$0.28+/word).",
+      "client_industries": ["Big Tech & SaaS", "Pharmaceuticals & Biotech", "Healthcare Systems", "Entertainment & Streaming", "Federal/State Government", "Legal"],
+      "demand_profile": "Massive outbound enterprise globalization demand + domestic LEP (Limited English Proficiency) healthcare/public-service access demand.",
+      "supply_profile": "Home to the world's largest mega-LSPs, TMS vendors, and frontier AI labs.",
+      "regulations": ["Title VI of the Civil Rights Act", "ACA Section 1557 (language access)", "FDA 21 CFR", "HIPAA", "Court Interpreters Act"]
+    },
+    {
+      "id": "ctry-japan",
+      "country": "Japan",
+      "region": "East Asia (APAC)",
+      "market_role": "Tier-1 High-Value Buyer & Domestic Localization Market",
+      "estimated_market_tier": "Top 3–4 national market globally (JTF / Yano Research Institute estimates ¥300B+ JPY domestic translation/interpretation ecosystem)",
+      "official_major_languages": ["Japanese"],
+      "primary_language_pairs": ["EN <-> JA", "ZH <-> JA", "KO <-> JA"],
+      "key_companies": ["Honyaku Center", "SunFlare", "TOIN", "Human Science", "Crest / Keywords Tokyo", "Rozetta (MetaReal)"],
+      "talent_ecosystem": "Highly rigorous technical, patent, gaming, and transcreation linguists; low English fluency creates persistent structural demand for high-context human localization.",
+      "client_industries": ["Video Games & Anime", "Automotive & Robotics", "Pharmaceuticals (PMDA)", "Patents & Manufacturing", "Enterprise SaaS entering Japan"],
+      "demand_profile": "Zero tolerance for awkward machine translation in B2B/consumer interfaces (keigo honorifics, ruby text, dense vertical/horizontal UI).",
+      "supply_profile": "Fragmented domestic LSP market led by Honyaku Center and SunFlare alongside global LSP Tokyo branches.",
+      "regulations": ["PMDA pharmaceutical guidelines", "Japan Patent Office (JPO) filing rules", "JIS standards", "APPI data privacy"]
+    },
+    {
+      "id": "ctry-germany",
+      "country": "Germany",
+      "region": "Western Europe (DACH)",
+      "market_role": "Tier-1 European Buyer & Language AI Hub",
+      "estimated_market_tier": "Largest continental European localization market",
+      "official_major_languages": ["German"],
+      "primary_language_pairs": ["DE <-> EN", "DE -> EU 24 languages", "DE <-> ZH/JA"],
+      "key_companies": ["DeepL", "KERN AG", "evs translations", "lengoo", "Across Systems", "Plunet", "memoQ/Trados DACH presence"],
+      "talent_ecosystem": "Strong academic diplomat/master translation heritage (Mainz/Germersheim, Heidelberg), sworn court translators (ermächtigte Übersetzer), and terminology engineers.",
+      "client_industries": ["Automotive (VW, BMW, Mercedes)", "Industrial Machinery (Mittelstand)", "SAP/Enterprise Software", "Chemicals & MedTech"],
+      "demand_profile": "Strict compliance with EU Machinery Directive, EU MDR medical device documentation, and technical DITA/XML authoring.",
+      "supply_profile": "Birthplace of DeepL, Plunet, and Across; dense network of specialized technical LSPs.",
+      "regulations": ["GDPR (strict BDSG enforcement)", "EU Machinery Regulation", "EU MDR/IVDR", "European Accessibility Act (BFSG)"]
+    },
+    {
+      "id": "ctry-india",
+      "country": "India",
+      "region": "South Asia (APAC)",
+      "market_role": "Global Delivery Hub & Rapidly Expanding Domestic Multilingual Market",
+      "estimated_market_tier": "Fastest-growing multilingual digital consumption market + major global LSP engineering/production hub",
+      "official_major_languages": ["Hindi", "English", "22 Eighth Schedule Languages (Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada, Malayalam, Odia, Punjabi, Assamese, etc.)"],
+      "primary_language_pairs": ["EN -> HI", "EN -> TA/TE/BN/MR/KN/ML/GU/PA", "EN -> Global pairs (offshore delivery centers)"],
+      "key_companies": ["Braahmam", "Fidel Softech", "Reverie Language Technologies", "Sarvam AI", "AI4Bharat (IIT Madras)", "RWS/TransPerfect/Lionbridge India centers"],
+      "talent_ecosystem": "Large base of localization engineers, DTP specialists, PMs, and Indic linguists; acute shortage of domain-specialized (clinical/legal) linguists in Tier-2/3 Indic languages.",
+      "client_industries": ["OTT & Regional Entertainment", "UPI/Fintech & E-commerce", "EdTech", "Government Digital Public Infrastructure (Bhashini)", "Global Offshore Operations"],
+      "demand_profile": "Voice-first, video-first, and vernacular Indic localization driven by 800M+ internet users and Government Digital India / Bhashini mandates.",
+      "supply_profile": "Major global production center for DTP, localization engineering, e-learning, and Indic AI training data.",
+      "regulations": ["DPDP Act 2023 (Digital Personal Data Protection)", "CDSCO clinical trial multi-language ICF rules", "SEBI/RBI consumer disclosure guidelines"]
+    }
+  ]
+}

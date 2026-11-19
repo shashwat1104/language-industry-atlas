@@ -1,0 +1,40 @@
+---
+title: "Deliverable 7: Unknown-Unknowns Gap Register"
+description: Continuous 10-Expert coverage audit register tracking under-covered niches, structural blind spots, evidence needed, and target volume placement (Mandatory Addendum C.8).
+---
+
+> **Mandate Reference:** `ATLAS_MASTER_PROMPT.md` — Mandatory Addendum C.8 (Unknown-Unknowns Audit & Gap Register).
+
+---
+
+## 1. The 10-Expert Audit Panel
+
+After every major research milestone, the Atlas is audited independently through ten distinct disciplinary lenses to expose "unknown unknowns"—segments, regulations, technologies, or economic mechanisms that conventional localization textbooks overlook:
+
+1. **20-Year Language Services Executive** (M&A, PE roll-ups, working capital DSO, multi-tier margin cascades)
+2. **Computational Linguist** (Morphological typology, tokenization taxes in non-Latin LLMs, corpus bias)
+3. **Localization & i18n Engineer** (Unicode normalization bugs, font shaping engines like HarfBuzz, AST string extraction)
+4. **Enterprise Localization Buyer** (Internal budget politics, procurement scorecards, localization ROI attribution)
+5. **Procurement & Supply-Chain Executive** (Master Service Agreements, ISO 27001 vendor audits, tail-spend consolidation)
+6. **Language Educator & Psychometrician** (High-stakes exam DIF—Differential Item Functioning, CEFR alignment)
+7. **Interpretation & Media Localization Specialist** (ISO 20109/24019 booth acoustics, ADR lip-sync phonology, EAA accessibility)
+8. **AI & Multilingual Data Researcher** (Synthetic data collapse in low-resource languages, RLHF cultural misalignment)
+9. **Industry Investor (PE / VC)** (Software vs. services gross-margin multiple arbitrage, net dollar retention, AI defensibility)
+10. **Language Policy & Regulatory Expert** (Digital sovereignty, minority language rights, medical/legal strict liability)
+
+---
+
+## 2. Active Unknown-Unknowns Gap Register
+
+| ID | Missing / Under-Explored Topic | Why It Matters (Insider Impact) | Relevant Industry Segment | Research Priority | Current Coverage Status | Evidence Needed | Target Chapter Where It Belongs |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **GAP-01** | **LLM Tokenization Tax & Subword Fertility Inequality** | Byte-Pair Encoding (BPE) tokenizers fragment agglutinative and non-Latin scripts (Tamil, Hindi, Burmese, Amharic, Arabic) into 3x–8x more tokens per word than English—inflating API cost, latency, and context-window consumption in AI localization. | Sector 2 (Language Tech) & Sector 4 (AI Infrastructure) | **High** | Mapped (Addressed in Vol 1 Ch 1.1; full benchmark table planned in Vol 3 & Vol 15) | Tokenizer fertility comparisons (`tiktoken` / SentencePiece tokens per 100 words across 30 scripts). | **Vol 3 Ch 3.3** & **Vol 15 Ch 15.2** |
+| **GAP-02** | **Psychometric Differential Item Functioning (DIF) in High-Stakes Test Localization** | Translating PISA, licensure exams, or cognitive assessments isn't just linguistic—if a translated item accidentally becomes harder or easier due to word frequency or syntax length, the entire psychometric validity of the exam collapses. | Sector 3 (Language Education & Assessment) | **High** | Mapped | International Test Commission (ITC) Guidelines for Translating and Adapting Tests; PISA translation verification protocols. | **Vol 4 Ch 4.6**, **Vol 5 Ch 5.10** & **Vol 16 Ch 16.2** |
+| **GAP-03** | **911 / 999 Emergency Dispatch OPI Latency & Liability Mechanics** | In emergency public-safety answering points (PSAPs), a 15-second delay in language identification and OPI interpreter connection can be fatal; contracts carry strict sub-20-second SLA penalties. | Sector 1 (Spoken Interpreting) & Sector 6 (Public Infrastructure) | **High** | Mapped | NENA (National Emergency Number Association) language access standards; municipal PSAP OPI contract SLAs. | **Vol 4 Ch 4.4** & **Vol 5 Ch 5.8** |
+| **GAP-04** | **Sign Language Avatar vs. Human Deaf Interpreter (CDI) Community & Legal Pushback** | Tech founders regularly pitch "3D AI Sign Language Avatars," unaware that Deaf communities and ADA/WFD advocates frequently reject synthetic avatars for omitting critical non-manual grammatical markers (eyebrow raise, torso shift, mouth morphemes) and violating Certified Deaf Interpreter (CDI) standards. | Sector 1 (Sign Language Services) & Domain 12 (Accessibility) | **High** | Mapped | World Federation of the Deaf (WFD) & NAD position statements on AI sign avatars; RID/CDI relay interpreting workflows. | **Vol 3 Ch 3.3**, **Vol 4 Ch 4.4** & **Vol 5 Ch 5.12** |
+| **GAP-05** | **Cross-Border Withholding Tax, VAT Reverse Charge & Freelancer Payout Friction** | LSPs paying 5,000+ freelancers across 90 countries face 10–30% cross-border treaty withholding taxes (e.g., Form W-8BEN, India TDS, Brazil IOF/IRRF), sanction checks, and FX spreads that silently erode 3–5% of net operating margin. | Domain 14 (Cross-Border Taxation & Financial Ops) | **Medium-High** | Mapped | OECD Model Tax Convention Art. 7/12, EU VAT Reverse Charge (Art. 196), payment rails analysis (Wise, Payoneer, Smartcat/ProZ payout fees). | **Vol 13 Ch 13.3** & **Vol 14 Ch 14.2** |
+| **GAP-06** | **Patent Filing Translation Shifts: London Agreement & EU Unitary Patent Impact** | The European Patent Office (EPO) Unitary Patent system and machine-translation transition phases are structurally restructuring one of the highest-margin translation verticals in the world (IP/Patent translation). | Sector 1 / Regulated Legal & IP (Vertical 47) | **High** | Mapped | EPO Unitary Patent transitional translation requirement rules; WIPO PCT statistics; RWS IP Services segment financial disclosures. | **Vol 5 Ch 5.8** & **Vol 12 Ch 12.3** |
+| **GAP-07** | **E-Discovery & Cross-Border Anti-Bribery (FCPA) Document Triage** | Law firms investigating multinational M&A or FCPA/antitrust cases must triage 5 million foreign emails/WeChat logs in 72 hours—creating a hybrid MT + keyword search + certified human translation funnel distinct from standard legal contracts. | Vertical 45 (Litigation & e-Discovery Translation) | **Medium-High** | Mapped | Relativity multilingual e-discovery workflows; DOJ FCPA foreign-language evidence certification standards. | **Vol 5 Ch 5.8** & **Vol 12 Ch 12.3** |
+| **GAP-08** | **Braille Translation Engines, Tactile Graphics & Easy-Read / Plain Language Localization** | Under the European Accessibility Act (EAA, effective June 2025) and Section 508, multilingual accessibility extends beyond screen readers to automated Braille transcription tables (Liblouis Grade 1/Grade 2 contracted Braille) and intralingual "Easy Read" adaptation for cognitive accessibility. | Domain 12 (Accessibility & Inclusive Communication) | **Medium-High** | Mapped | Liblouis open-source Braille translator architecture; Inclusion Europe Easy-to-Read standards; ISO 24495-1:2023 (Plain Language). | **Vol 5 Ch 5.12**, **Vol 10 Ch 10.2** & **Vol 11 Ch 11.3** |
+| **GAP-09** | **Font Licensing Traps & CJK Webfont Subsetting in Global Product Launches** | Commercial CJK fonts contain 20,000–65,000+ glyphs (10–25 MB per weight) and carry strict per-app/embedded OEM licensing fees (Morisawa, Monotype, FounderType); naïve embedding causes either massive web load times or six-figure copyright infringement claims. | Domain 07 (i18n Engineering) & Domain 13 (IP/Licensing) | **Medium** | Mapped | Unicode CJK Unified Ideographs block specs; dynamic WOFF2 unicode-range subsetting; commercial foundry OEM EULA audits. | **Vol 9 Ch 9.1** & **Vol 17 Ch 17.2** |
+| **GAP-10** | **Voice Actor Biometric Consent, SAG-AFTRA AI Riders & EU AI Act Deepfake Labeling** | AI dubbing and voice cloning studios face existential legal risk if training or cloning voices without explicit per-project biometric licensing, residual royalties, and watermarks. | Sector 5 (Media/Voice) & Domain 13 (IP/Voice Rights) | **High** | Mapped | SAG-AFTRA Interactive Media & Dubbing AI agreements (2024–2025); EU AI Act Art. 50 transparency obligations; voice synthesis watermarks. | **Vol 11 Ch 11.2** & **Vol 17 Ch 17.2** |

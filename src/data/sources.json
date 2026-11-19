@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Authoritative Research Sources & Academic Disciplines (Mandatory Addendum D)",
+  "organizations": [
+    {
+      "id": 1,
+      "category": "Industry research",
+      "organization": "Nimdzi Insights",
+      "website": "https://www.nimdzi.com/",
+      "focus": "Language services market research, Nimdzi 100 rankings, language technology Atlas, and industry intelligence"
+    },
+    {
+      "id": 2,
+      "category": "Industry research",
+      "organization": "Slator",
+      "website": "https://slator.com/",
+      "focus": "Language industry news, Slator LSPI, company financial intelligence, M&A tracking, and AI developments"
+    },
+    {
+      "id": 3,
+      "category": "Industry research",
+      "organization": "CSA Research",
+      "website": "https://csa-research.com/",
+      "focus": "Market research, enterprise localization maturity, Can't Read Won't Buy studies, and buyer behavior"
+    },
+    {
+      "id": 4,
+      "category": "Industry research",
+      "organization": "European Language Industry Survey (ELIS)",
+      "website": "https://elis-survey.org/",
+      "focus": "Annual multi-stakeholder survey of European and global language industry trends, operations, rates, and technology adoption"
+    },
+    {
+      "id": 5,
+      "category": "Professional association",
+      "organization": "GALA (Globalization and Localization Association)",
+      "website": "https://www.gala-global.org/",
+      "focus": "Non-profit trade association for globalization and localization professionals, LSPs, enterprises, and technology vendors"
+    },
+    {
+      "id": 6,
+      "category": "Professional association",
+      "organization": "TAUS",
+      "website": "https://www.taus.net/",
+      "focus": "Translation automation, DQF/MQM quality frameworks, DeMT, language data marketplaces, and AI quality estimation"
+    },
+    {
+      "id": 7,
+      "category": "Professional association",
+      "organization": "FIT – International Federation of Translators",
+      "website": "https://www.fit-ift.org/",
+      "focus": "Global federation of national translator, interpreter, and terminologist associations and professional standards"
+    },
+    {
+      "id": 8,
+      "category": "Professional education",
+      "organization": "Localization Institute",
+      "website": "https://www.localizationinstitute.com/",
+      "focus": "Localization management training, LocWorld conference co-organizer, and professional certifications"
+    },
+    {
+      "id": 9,
+      "category": "Technical standards",
+      "organization": "W3C (World Wide Web Consortium)",
+      "website": "https://www.w3.org/",
+      "focus": "Web standards, Internationalization (i18n) Activity, ITS 2.0, TTML/WebVTT timed text, and WCAG accessibility"
+    },
+    {
+      "id": 10,
+      "category": "Technical standards",
+      "organization": "Unicode Consortium",
+      "website": "https://unicode.org/",
+      "focus": "The Unicode Standard, CLDR (Common Locale Data Repository), ICU, scripts, character encoding, and text processing"
+    },
+    {
+      "id": 11,
+      "category": "Language resources",
+      "organization": "ELRA (European Language Resources Association)",
+      "website": "https://www.elra.info/",
+      "focus": "Language resources validation, speech/text corpora distribution, LREC conference, and evaluation campaigns"
+    },
+    {
+      "id": 12,
+      "category": "Language research infrastructure",
+      "organization": "CLARIN",
+      "website": "https://www.clarin.eu/",
+      "focus": "Common Language Resources and Technology Infrastructure for digital humanities and social sciences research"
+    },
+    {
+      "id": 13,
+      "category": "Language technology research",
+      "organization": "META-NET",
+      "website": "http://www.meta-net.eu/",
+      "focus": "Network of Excellence forging the Multilingual Europe Technology Alliance and language whitepapers"
+    },
+    {
+      "id": 14,
+      "category": "Language policy and preservation",
+      "organization": "UNESCO",
+      "website": "https://www.unesco.org/",
+      "focus": "World Atlas of Languages, International Decade of Indigenous Languages (2022–2032), linguistic diversity, and policy"
+    },
+    {
+      "id": 15,
+      "category": "Information standards",
+      "organization": "NISO (National Information Standards Organization)",
+      "website": "https://www.niso.org/",
+      "focus": "Information management, publishing, metadata, and technical interoperability standards"
+    }
+  ],
+  "academic_disciplines": [
+    {
+      "id": 1,
+      "discipline": "Translation Studies",
+      "scope": "Translation theory, equivalence, Skopos theory, descriptive translation studies, methods, and professional practice"
+    },
+    {
+      "id": 2,
+      "discipline": "Localization Studies",
+      "scope": "GILT (Globalization, Internationalization, Localization, Translation) processes, digital products, and global market adaptation"
+    },
+    {
+      "id": 3,
+      "discipline": "Computational Linguistics",
+      "scope": "Formal and statistical computational modeling of natural language morphology, syntax, semantics, and discourse"
+    },
+    {
+      "id": 4,
+      "discipline": "Natural Language Processing (NLP)",
+      "scope": "Machine processing, neural machine translation (NMT), large language models (LLMs), speech recognition, and text generation"
+    },
+    {
+      "id": 5,
+      "discipline": "Sociolinguistics",
+      "scope": "Language variation, register, prestige, code-switching, diglossia, and language's relationship with social structures"
+    },
+    {
+      "id": 6,
+      "discipline": "Language Economics",
+      "scope": "Economic value of language skills, trade impacts of common/localized languages, transaction costs, and multilingualism ROI"
+    },
+    {
+      "id": 7,
+      "discipline": "Terminology Science",
+      "scope": "Onomasiological concept systems, termbases, ISO 704 / ISO 30042 (TBX), domain ontologies, and knowledge representation"
+    },
+    {
+      "id": 8,
+      "discipline": "Interpreting Studies",
+      "scope": "Cognitive load models (Gile's Effort Models), consecutive, simultaneous, remote (RSI/VRI/OPI), community, and court interpreting"
+    },
+    {
+      "id": 9,
+      "discipline": "Audiovisual Translation (AVT)",
+      "scope": "Interlingual subtitling, SDH, lip-sync dubbing, UN-style voiceover, audio description (AD), and media accessibility"
+    },
+    {
+      "id": 10,
+      "discipline": "Globalization Studies",
+      "scope": "International business expansion, cross-border digital commerce, cultural dimensions, and multinational operations"
+    },
+    {
+      "id": 11,
+      "discipline": "Digital Humanities",
+      "scope": "Computational analysis of cultural texts, historical corpora, TEI encoding, and multilingual archival preservation"
+    },
+    {
+      "id": 12,
+      "discipline": "Language Documentation",
+      "scope": "Field linguistics, recording, orthographic development, archiving, and revitalizing endangered and indigenous languages"
+    }
+  ]
+}
